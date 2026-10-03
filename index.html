@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BALA Ji Gold | Premium Jewellery</title>
+  <meta name="description" content="BALA Ji Gold - Premium jewellery for women and girls.">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <span>BALA</span> Ji Gold
+    </div>
+
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#products">Jewellery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+
+      <p class="small-title">WELCOME TO</p>
+
+      <h1>
+        BALA Ji <span>Gold</span>
+      </h1>
+
+      <p class="hero-text">
+        Elegant Jewellery for Every Special Moment
+      </p>
+
+      <a href="#products" class="gold-btn">
+        Explore Collection
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="features">
+
+    <div class="feature">
+      <div class="feature-icon">💎</div>
+      <h3>Premium Quality</h3>
+      <p>Beautiful and elegant jewellery collection.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">✨</div>
+      <h3>Elegant Design</h3>
+      <p>Modern designs for girls and women.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">🤝</div>
+      <h3>Trusted Service</h3>
+      <p>Personal assistance for your jewellery choice.</p>
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+  <section class="products-section" id="products">
+
+    <div class="section-title">
+      <p>OUR COLLECTION</p>
+      <h2>Premium Jewellery</h2>
+      <span></span>
+    </div>
+
+
+    <!-- SEARCH + FILTER -->
+    <div class="shop-controls">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search jewellery..."
+      >
+
+      <select id="categoryFilter">
+        <option value="all">All Jewellery</option>
+        <option value="ring">Rings</option>
+        <option value="necklace">Necklaces</option>
+        <option value="earrings">Earrings</option>
+        <option value="bracelet">Bracelets</option>
+      </select>
+
+    </div>
+
+
+    <!-- PRODUCT GRID -->
+    <div class="product-grid" id="productGrid">
+
+
+      <!-- PRODUCT 1 -->
+      <div
+        class="product-card"
+        data-category="ring"
+        data-name="Diamond Ring"
+      >
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85"
+            alt="Diamond Ring"
+          >
+
+          <button
+            class="quick-btn"
+            onclick="quickView(0)"
+          >
+            Quick View
+          </button>
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">
+            Rings
+          </span>
+
+          <h3>Diamond Ring</h3>
+
+          <p class="price">
+            ₹35,000
+          </p>
+
+          <button
+            class="enquiry-btn"
+            onclick="sendEnquiry(0)"
+          >
+            Enquire on WhatsApp
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- PRODUCT 2 -->
+      <div
+        class="product-card"
+        data-category="necklace"
+        data-name="Gold Necklace"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85"
+            alt="Gold Necklace"
+          >
+
+          <button
+            class="quick-btn"
+            onclick="quickView(1)"
+          >
+            Quick View
+          </button>
+
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">
+            Necklaces
+          </span>
+
+          <h3>Gold Necklace</h3>
+
+          <p class="price">
+            ₹85,000
+          </p>
+
+          <button
+            class="enquiry-btn"
+            onclick="sendEnquiry(1)"
+          >
+            Enquire on WhatsApp
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- PRODUCT 3 -->
+      <div
+        class="product-card"
+        data-category="earrings"
+        data-name="Diamond Earrings"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85"
+            alt="Diamond Earrings"
+          >
+
+          <button
+            class="quick-btn"
+            onclick="quickView(2)"
+          >
+            Quick View
+          </button>
+
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">
+            Earrings
+          </span>
+
+          <h3>Diamond Earrings</h3>
+
+          <p class="price">
+            ₹45,000
+          </p>
+
+          <button
+            class="enquiry-btn"
+            onclick="sendEnquiry(2)"
+          >
+            Enquire on WhatsApp
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- PRODUCT 4 - NEW -->
+      <div
+        class="product-card"
+        data-category="bracelet"
+        data-name="Diamond Bracelet Girls Women"
+      >
+
+        <div class="product-image">
+
+          <!-- फिलहाल sample image -->
+          <img
+            src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=900&q=85"
+            alt="Diamond Bracelet Girls Women"
+          >
+
+          <span class="new-badge">
+            NEW
+          </span>
+
+          <button
+            class="quick-btn"
+            onclick="quickView(3)"
+          >
+            Quick View
+          </button>
+
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">
+            Bracelets
+          </span>
+
+          <h3>
+            Diamond Bracelet – Girls & Women
+          </h3>
+
+          <p class="price">
+            ₹55,000
+          </p>
+
+          <button
+            class="enquiry-btn"
+            onclick="sendEnquiry(3)"
+          >
+            Enquire on WhatsApp
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+
+    <div class="about-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1000&q=85"
+        alt="BALA Ji Gold Jewellery"
+      >
+
+    </div>
+
+    <div class="about-content">
+
+      <p class="small-title">
+        ABOUT US
+      </p>
+
+      <h2>
+        Jewellery That Makes
+        <span>Every Moment Special</span>
+      </h2>
+
+      <p>
+        BALA Ji Gold brings a beautiful collection of
+        elegant jewellery for girls and women.
+      </p>
+
+      <p>
+        Choose from our premium rings, necklaces,
+        earrings and bracelets.
+      </p>
+
+      <a
+        href="https://wa.me/919571254404?text=Hello%20BALA%20Ji%20Gold"
+        class="gold-btn"
+        target="_blank"
+      >
+        Chat With Us
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+
+    <div class="section-title">
+
+      <p>GET IN TOUCH</p>
+
+      <h2>
+        Contact BALA Ji Gold
+      </h2>
+
+      <span></span>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+
+        <div class="contact-icon">
+          📍
+        </div>
+
+        <h3>Shop Address</h3>
+
+        <p>
+          Chennai, Manglapuram,<br>
+          Chetpet, 10th Street
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <div class="contact-icon">
+          📞
+        </div>
+
+        <h3>Call Us</h3>
+
+        <p>
+          <a href="tel:+919571254404">
+            +91 95712 54404
+          </a>
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <div class="contact-icon">
+          💬
+        </div>
+
+        <h3>WhatsApp</h3>
+
+        <p>
+          <a
+            href="https://wa.me/919571254404"
+            target="_blank"
+          >
+            Chat on WhatsApp
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      BALA Ji <span>Gold</span>
+    </div>
+
+    <p>
+      © 2026 BALA Ji Gold. All Rights Reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- WHATSAPP FLOAT -->
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/919571254404?text=Hello%20BALA%20Ji%20Gold,%20mujhe%20jewellery%20ke%20baare%20mein%20jaankari%20chahiye."
+    target="_blank"
+    aria-label="WhatsApp"
+  >
+    💬
+  </a>
+
+
+  <!-- QUICK VIEW MODAL -->
+  <div
+    class="modal"
+    id="productModal"
+  >
+
+    <div class="modal-box">
+
+      <button
+        class="close-modal"
+        onclick="closeModal()"
+      >
+        ×
+      </button>
+
+      <img
+        id="modalImage"
+        src=""
+        alt=""
+      >
+
+      <div class="modal-content">
+
+        <span
+          id="modalCategory"
+          class="product-category"
+        ></span>
+
+        <h2 id="modalName"></h2>
+
+        <p
+          id="modalPrice"
+          class="modal-price"
+        ></p>
+
+        <button
+          class="enquiry-btn"
+          id="modalWhatsapp"
+        >
+          Enquire on WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
