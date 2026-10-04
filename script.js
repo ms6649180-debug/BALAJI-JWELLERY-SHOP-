@@ -1,4 +1,4 @@
-const products = [
+const products = [ Diamond ring 
   {
     name: "Diamond Ring",
     category: "Rings",
